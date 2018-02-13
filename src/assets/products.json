@@ -1,0 +1,16 @@
+[{
+        "id": "9aa113b4-1e4e-4cde-bf9d-8358fc78ea4f",
+        "price": 8000,
+        "name": "Health Product"
+    },
+    {
+        "id": "bdcbe438-ac85-4acf-8949-5627fd5b57df",
+        "price": 4000,
+        "name": "Home Insurance"
+    },
+    {
+        "id": "58552daa-30f6-46fa-a808-f1a1d7667561",
+        "price": 1000,
+        "name": "Term Product"
+    }
+]
