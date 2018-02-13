@@ -9,14 +9,14 @@
     <br/>
     <div class="row">
         <div class="small-12 columns">
-            <input type="email" [(ngModel)]="signup_user.email" placeholder="email">
-            <input type="password" [(ngModel)]="signup_user.password" placeholder="password">
+            <input type="email" [(ngModel)]="user.email" placeholder="email">
+            <input type="password" [(ngModel)]="user.password" placeholder="password">
         </div>
     </div>
     <br/>
     <div class="row">
         <div class="small-12 columns">
-            <a class="success button large expanded" (click)="validateUser(signup_user)">Login</a>
+            <a class="success button large expanded" (click)="validateUser(user)">Login</a>
         </div>
     </div>
     <div class="row">
@@ -38,15 +38,15 @@
     <br/>
     <div class="row">
         <div class="small-12 columns">
-            <input type="text" [(ngModel)]="user.username" placeholder="username">
-            <input type="email" [(ngModel)]="user.email" placeholder="email">
-            <input type="password" [(ngModel)]="user.password" placeholder="password">
+            <input type="text" [(ngModel)]="signup_user.username" placeholder="username">
+            <input type="email" [(ngModel)]="signup_user.email" placeholder="email">
+            <input type="password" [(ngModel)]="signup_user.password" placeholder="password">
         </div>
     </div>
     <br/>
     <div class="row">
         <div class="small-12 columns">
-            <a class="success button large expanded" (click)="registerUser(user)">Submit</a>
+            <a class="success button large expanded" (click)="registerUser(signup_user)">Submit</a>
         </div>
     </div>
     <div class="row">

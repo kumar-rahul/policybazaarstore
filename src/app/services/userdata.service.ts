@@ -15,8 +15,8 @@ export class UserdataService {
   }
 
   public addUser(newuser: User): void {
-   const usersList = this.retrieve();
-  let user = usersList.find((u) => u.email === newuser.email);
+    const usersList = this.retrieve();
+    let user = usersList.find((u) => u.email === newuser.email);
 
     if (user === undefined) {
       const usersObj = { users: [] };
@@ -49,7 +49,11 @@ export class UserdataService {
   }
 
   private retrieve(): User[] {
-    const storedUser = JSON.parse(this.storage.getItem(USER_KEY));
+    let storedUser = JSON.parse(this.storage.getItem(USER_KEY));
+    if(storedUser === null) {
+      storedUser = {};
+      storedUser.users = [];
+    }
     return storedUser.users;
   }
 }
